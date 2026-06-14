@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayyappa Kavuri | Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-color: #38bdf8;
+            --accent-hover: #7dd3fc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 0 1.5rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        header {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #334155;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        .hero {
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            letter-spacing: -0.5px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            background-color: var(--accent-color);
+            color: #0f172a;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .sections-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            padding-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-color);
+            position: relative;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid #334155;
+            padding: 2rem;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .tag-container {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 0.75rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            font-size: 0.75rem;
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent-color);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+
+        .card h3 {
+            margin-bottom: 0.75rem;
+            color: var(--text-color);
+            font-size: 1.35rem;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            background-color: var(--card-bg);
+            border: 1px solid #334155;
+            padding: 2rem;
+            border-radius: 8px;
+        }
+
+        .skill-group h4 {
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .skill-group p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Contact Layout */
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            align-items: center;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-info a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 4rem 0;
+            border-top: 1px solid #334155;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <nav class="navbar">
+                <div class="logo">Ayyappa Kavuri</div>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <h1>Hi, I'm an Engineering Student</h1>
+            <p>Focused on VLSI design, hardware architectures, and building robust backend web applications.</p>
+            <a href="#contact" class="btn">Let's Connect</a>
+        </section>
+
+        <div class="sections-wrapper">
+            
+            <section class="projects-section">
+                <h2>Featured Projects</h2>
+                <div class="grid">
+                    
+                    <div class="card">
+                        <div>
+                            <div class="tag-container">
+                                <span class="tag">Java</span>
+                                <span class="tag">Spring Boot</span>
+                                <span class="tag">Thymeleaf</span>
+                            </div>
+                            <h3>Attendance Management System</h3>
+                            <p>Developed a web-based management platform featuring a teacher/student dashboard, real-time analytics, and automated reporting functionality on localhost.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <div class="tag-container">
+                                <span class="tag">IoT</span>
+                                <span class="tag">Verilog</span>
+                                <span class="tag">Embedded Systems</span>
+                            </div>
+                            <h3>Real-Time Traffic Management</h3>
+                            <p>Designed a smart traffic automation system optimizing signal intervals based on dynamic vehicle load density to reduce congestion levels.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <div class="tag-container">
+                                <span class="tag">Cadence Virtuoso</span>
+                                <span class="tag">22nm / 45nm</span>
+                                <span class="tag">VLSI</span>
+                            </div>
+                            <h3>Low-Power 3-bit Flash ADC</h3>
+                            <p>Designed and simulated a high-speed Flash ADC layout utilizing dynamic latch comparators targeted at reducing kickback noise in fine-line technologies.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="skills-section">
+                <h2>Technical Toolkit</h2>
+                <div class="skills-grid">
+                    <div class="skill-group">
+                        <h4>Software & Backend</h4>
+                        <p>Java, Spring Boot, REST APIs, Git & GitHub</p>
+                    </div>
+                    <div class="skill-group">
+                        <h4>Hardware & EDA Tools</h4>
+                        <p>VLSI Design, Cadence Virtuoso, MATLAB, Verilog</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer id="contact">
+            <h2>Connect With Me</h2>
+            <div class="contact-info">
+                <p>Email: <a href="mailto:ayyappakavuri@gmail.com">ayyappakavuri@gmail.com</a></p>
+                <p>Phone: <a href="tel:+917842110917">+91 78421 10917</a></p>
+            </div>
+            <p>&copy; 2026 Ayyappa Kavuri. All rights reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
